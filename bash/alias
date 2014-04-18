@@ -1,0 +1,17 @@
+# MAC
+alias ls="ls -G"
+alias macvim='o -a MacVim'
+
+# UBUNTU
+alias open="gnome-open"
+
+# WIN
+alias open="start"
+
+# COMMON
+alias l="ls"
+alias ll="ls -l"
+alias v="vim"
+alias o="open"
+alias m="make"
+
