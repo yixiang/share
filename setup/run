@@ -1,8 +1,8 @@
-export HOSTt=
+PARENT_PATH=https://raw.githubusercontent.com/yixiang/public/master/setup
 if [ "`uname`" = "Darwin" ]; then
 	echo "Setting up as Mac environment"
-	curl -L "$HOST/mac/run" | bash
+	curl -L "$PARENT_PATH/mac/run" | bash
 else
 	echo "Setting up as Linux environment"
-	curl -L "$HOST/linux/run" | bash
+	curl -L "$PARENT_PATH/linux/run" | bash
 fi
