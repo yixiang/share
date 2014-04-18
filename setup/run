@@ -1,4 +1,4 @@
-PARENT_PATH=https://raw.githubusercontent.com/yixiang/public/master/setup
+PARENT_PATH=https://raw.githubusercontent.com/yixiang/share/master/setup
 if [ "`uname`" = "Darwin" ]; then
 	echo "Setting up as Mac environment"
 	curl -L "$PARENT_PATH/mac/run" | bash
