@@ -1,0 +1,8 @@
+
+# COMMON
+alias l="ls"
+alias ll="ls -l"
+alias v="vim"
+alias o="open"
+alias m="make"
+

@@ -1,0 +1,7 @@
+export HOST=http://dl.dropbox.com/u/2833661/setup
+export OS=mac
+
+curl -L "$HOST/common/vimrc" > ~/.vimrc
+curl -L "$HOST/$OS/alias" >> ~/.profile
+curl -L "$HOST/common/alias" >> ~/.profile
+source ~/.profile

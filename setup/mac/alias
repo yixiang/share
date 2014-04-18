@@ -1,0 +1,5 @@
+
+# MAC
+alias ls="ls -G"
+alias macvim='o -a MacVim'
+

@@ -1,0 +1,8 @@
+export HOSTt=
+if [ "`uname`" = "Darwin" ]; then
+	echo "Setting up as Mac environment"
+	curl -L "$HOST/mac/run" | bash
+else
+	echo "Setting up as Linux environment"
+	curl -L "$HOST/linux/run" | bash
+fi
