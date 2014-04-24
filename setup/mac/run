@@ -1,7 +1,6 @@
-export HOST=http://dl.dropbox.com/u/2833661/setup
-export OS=mac
+export MASTER_PATH=https://raw.githubusercontent.com/yixiang/share/master/
+export OS_NAME=mac
 
-curl -L "$HOST/common/vimrc" > ~/.vimrc
-curl -L "$HOST/$OS/alias" >> ~/.profile
-curl -L "$HOST/common/alias" >> ~/.profile
-source ~/.profile
+curl -L "$MASTER_PATH/vim/vimrc" > ~/.vimrc
+curl -L "$MASTER_PATH/setup/$OS_NAME/alias" >> ~/.bash_profile
+curl -L "$MASTER_PATH/setup/common/alias" >> ~/.bash_profile

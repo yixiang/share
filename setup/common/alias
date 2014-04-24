@@ -1,4 +1,3 @@
-
 # COMMON
 alias l="ls"
 alias ll="ls -l"
@@ -6,3 +5,17 @@ alias v="vim"
 alias o="open"
 alias m="make"
 
+# GIT SHORTCUTS
+alias gita='git add'
+alias gitb='git branch'
+alias gitc='git commit -a -m'
+alias gitd='git diff'
+alias gitf='git fetch'
+alias gitm='git merge'
+alias gito='git checkout'
+alias gitp='git push'
+alias gitr='git rebase'
+alias gits='git status'
+alias gitt='git tag'
+alias gitamend='git commit --amend -a'
+alias gitl='git log --graph --decorate --pretty=oneline --abbrev-commit'
