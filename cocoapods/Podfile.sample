@@ -1,0 +1,11 @@
+platform :ios,7.0
+
+target :ReactiveCocoaDemo do
+pod 'ReactiveCocoa',  '2.2'
+pod 'AFNetworking', '2.2.3'
+pod 'AFNetworking-RACExtensions', :git => 'https://github.com/CodaFi/AFNetworking-RACExtensions.git'
+end
+
+target :ReactiveCocoaDemoTests do
+  pod 'OCMock', '2.2.4'
+end
