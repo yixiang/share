@@ -30,6 +30,7 @@ end
 map ,a :%y<CR>,y
 " paste from yank register
 map ,0 "0p
+map ,; "0p
 " paste delete register
 map ,1 "1p
 
