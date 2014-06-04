@@ -1,3 +1,19 @@
+" ESC in insert mode
 imap ,, <ESC>:w<CR>
 imap ,e <ESC>
+
+" Write and quit
 nmap ,, :w<CR>
+nmap ,q :q<CR>
+
+" Copy paste
+nmap ,p "*p
+nmap ,P "*P
+vmap ,p "*p
+vmap ,P "*P
+nmap ,y "*y
+vmap ,y "*y
+
+" Open file
+nmap gf gd
+
