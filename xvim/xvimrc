@@ -1,0 +1,3 @@
+imap ,, <ESC>:w<CR>
+imap ,e <ESC>
+nmap ,, :w<CR>
