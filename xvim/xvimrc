@@ -11,15 +11,12 @@ nmap ,w  :w<CR>
 nmap ,q  :q<CR>
 
 " Copy paste
-nmap ,p  "*p
-nmap ,P  "*P
-vmap ,p  "*p
-vmap ,P  "*P
-nmap ,y  "*y
-vmap ,y  "*y
+map ,p  "*p
+map ,P  "*P
+map ,y  "*y
 
 " Open file
-nmap gf  gd
+map gf  gd
 
 " Build and Run (using m to match vim's make comamnds)
 map ,r  :run<CR>
@@ -40,8 +37,14 @@ map ,s viw:xccmd findSelectedTextInWorkspace<CR>
 map ,f :xccmd goForwardInHistoryByCommand<CR>
 map ,b :xccmd goBackInHistoryByCommand<CR>
 map ,c :xccmd jumpToNextCounterpart<CR>
+map ,in :xcmenucmd Jump to Next Issue<CR>
+map ,ip :xcmenucmd Jump to Previous Issue<CR>
 
 " View current file in ...
 map ,vp :xccmd revealInProjectNavigator<CR>
 map ,vs :xccmd revealInSymbolNavigator<CR>
 map ,vf :xccmd showInFinder<CR>
+
+" Help (=== option click)
+map ,h :xhelp<CR>
+
