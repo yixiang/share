@@ -21,17 +21,27 @@ vmap ,y  "*y
 " Open file
 nmap gf  gd
 
-" Build and Run
+" Build and Run (using m to match vim's make comamnds)
 map ,r  :run<CR>
-map ,b  :xcmenucmd Build<CR>
+map ,mr  :run<CR>
+map ,ma  :xcmenucmd Analyze<CR>
+map ,mb  :xcmenucmd Build<CR>
+map ,mm  :xcmenucmd Build<CR>
+map ,mp  :xcmenucmd Profile<CR>
+map ,mt  :xcmenucmd Test<CR>
 
-" Commenting (Not working)
+" Commenting (not working)
 "vmap ,c :xccmd commentSelection<CR>
 
 " Searching
 map ,s viw:xccmd findSelectedTextInWorkspace<CR>
 
 " Navigating
-map ,n :xccmd goForwardInHistoryByCommand<CR>
+map ,f :xccmd goForwardInHistoryByCommand<CR>
 map ,b :xccmd goBackInHistoryByCommand<CR>
 map ,c :xccmd jumpToNextCounterpart<CR>
+
+" View current file in ...
+map ,vp :xccmd revealInProjectNavigator<CR>
+map ,vs :xccmd revealInSymbolNavigator<CR>
+map ,vf :xccmd showInFinder<CR>
