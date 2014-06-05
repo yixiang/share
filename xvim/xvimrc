@@ -1,19 +1,37 @@
+" Case incensitive search is the most common case.
+set ignorecase
+
 " ESC in insert mode
-imap ,, <ESC>:w<CR>
-imap ,e <ESC>
+imap ,,  <ESC>:w<CR>
+imap ,e  <ESC>
 
 " Write and quit
-nmap ,, :w<CR>
-nmap ,q :q<CR>
+nmap ,,  :w<CR>
+nmap ,w  :w<CR>
+nmap ,q  :q<CR>
 
 " Copy paste
-nmap ,p "*p
-nmap ,P "*P
-vmap ,p "*p
-vmap ,P "*P
-nmap ,y "*y
-vmap ,y "*y
+nmap ,p  "*p
+nmap ,P  "*P
+vmap ,p  "*p
+vmap ,P  "*P
+nmap ,y  "*y
+vmap ,y  "*y
 
 " Open file
-nmap gf gd
+nmap gf  gd
 
+" Build and Run
+map ,r  :run<CR>
+map ,b  :xcmenucmd Build<CR>
+
+" Commenting (Not working)
+"vmap ,c :xccmd commentSelection<CR>
+
+" Searching
+map ,s viw:xccmd findSelectedTextInWorkspace<CR>
+
+" Navigating
+map ,n :xccmd goForwardInHistoryByCommand<CR>
+map ,b :xccmd goBackInHistoryByCommand<CR>
+map ,c :xccmd jumpToNextCounterpart<CR>
