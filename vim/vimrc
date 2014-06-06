@@ -8,24 +8,28 @@ if has('gui_running')
     endif
 endif
 
-if has('unix') " command line version of vim on mac doesn't expose 'mac'
-    " On OSX
-    map ,y :call system("pbcopy", getreg("\""))<CR>
-    map ,p :call setreg("1",system("pbpaste"))<CR>"1p
-    map ,P :call setreg("1",system("pbpaste"))<CR>"1P
-    set spellfile=~/.vimspell.utf-8.add
-elseif has('win32')
-   map ,y "+y
-   map ,p "+p
-   map ,P "+P
-else
-   " On ubuntu (running Vim in gnome-terminal)
-   " The reason for the double-command on <C-c> is due to some weirdness with
-   " the X clipboard system.
-   map ,y :call system("xclip -i -selection clipboard", getreg("\""))<CR>
-   map ,p :call setreg("1",system("xclip -o -selection clipboard"))<CR>"1p
-   map ,P :call setreg("1",system("xclip -o -selection clipboard"))<CR>"1P
-end
+" tie clipboard and the default register together
+set clipboard=unnamed
+
+" if has('unix') " command line version of vim on mac doesn't expose 'mac'
+"     " On OSX
+"     map ,y :call system("pbcopy", getreg("\""))<CR>
+"     map ,p :call setreg("1",system("pbpaste"))<CR>"1p
+"     map ,P :call setreg("1",system("pbpaste"))<CR>"1P
+"     set spellfile=~/.vimspell.utf-8.add
+" elseif has('win32')
+"    map ,y "+y
+"    map ,p "+p
+"    map ,P "+P
+" else
+"    " On ubuntu (running Vim in gnome-terminal)
+"    " The reason for the double-command on <C-c> is due to some weirdness with
+"    " the X clipboard system.
+"    map ,y :call system("xclip -i -selection clipboard", getreg("\""))<CR>
+"    map ,p :call setreg("1",system("xclip -o -selection clipboard"))<CR>"1p
+"    map ,P :call setreg("1",system("xclip -o -selection clipboard"))<CR>"1P
+" end
+
 " copy all
 map ,a :%y<CR>,y
 " paste from yank register
