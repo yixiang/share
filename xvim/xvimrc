@@ -10,10 +10,12 @@ nmap ,,  :w<CR>
 nmap ,w  :w<CR>
 nmap ,q  :q<CR>
 
-" Copy paste
-map ,p  "*p
-map ,P  "*P
-map ,y  "*y
+" Make clipboard and default register equivalent
+set clipboard=unnamed
+" " Copy paste
+" map ,p  "*p
+" map ,P  "*P
+" map ,y  "*y
 
 " Open file
 map gf  gd
