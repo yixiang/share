@@ -15,6 +15,7 @@ nmap ,q  :q<CR>
 set clipboard=unnamed
 
 " " Copy paste (word copy and word replacement)
+map ,a  ggyG
 map ,y  lbye
 map ,p  lbde"0P
 
@@ -31,7 +32,7 @@ map ,mp  :xcmenucmd Profile<CR>
 map ,mt  :xcmenucmd Test<CR>
 
 " Commenting (not working)
-"vmap ,c :xccmd commentSelection<CR>
+map ,c :xccmd commentAndUncommentCurrentLines<CR>
 
 " Searching
 map ,s viw:xccmd findSelectedTextInWorkspace<CR>
@@ -39,7 +40,7 @@ map ,s viw:xccmd findSelectedTextInWorkspace<CR>
 " Navigating
 map ,f :xccmd goForwardInHistoryByCommand<CR>
 map ,b :xccmd goBackInHistoryByCommand<CR>
-map ,c :xccmd jumpToNextCounterpart<CR>
+map ,k :xccmd jumpToNextCounterpart<CR>
 map ,in :xcmenucmd Jump to Next Issue<CR>
 map ,ip :xcmenucmd Jump to Previous Issue<CR>
 

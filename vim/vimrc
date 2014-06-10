@@ -12,6 +12,7 @@ endif
 set clipboard=unnamed
 
 " " Copy paste (word copy and word replacement)
+map ,a  ggyG
 map ,y  lbye
 map ,p  lbde"0P
 
