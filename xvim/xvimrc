@@ -40,7 +40,7 @@ map ,s viw:xccmd findSelectedTextInWorkspace<CR>
 " Navigating
 map ,f :xccmd goForwardInHistoryByCommand<CR>
 map ,b :xccmd goBackInHistoryByCommand<CR>
-map ,k :xccmd jumpToNextCounterpart<CR>
+map ,n :xccmd jumpToNextCounterpart<CR>
 map ,in :xcmenucmd Jump to Next Issue<CR>
 map ,ip :xcmenucmd Jump to Previous Issue<CR>
 
