@@ -11,6 +11,10 @@ endif
 " tie clipboard and the default register together
 set clipboard=unnamed
 
+" " Copy paste (word copy and word replacement)
+map ,y  lbye
+map ,p  lbde"0P
+
 " if has('unix') " command line version of vim on mac doesn't expose 'mac'
 "     " On OSX
 "     map ,y :call system("pbcopy", getreg("\""))<CR>

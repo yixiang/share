@@ -13,10 +13,10 @@ nmap ,q  :q<CR>
 
 " Make clipboard and default register equivalent
 set clipboard=unnamed
-" " Copy paste
-" map ,p  "*p
-" map ,P  "*P
-" map ,y  "*y
+
+" " Copy paste (word copy and word replacement)
+map ,y  lbye
+map ,p  lbde"0P
 
 " Open file
 map gf  gd
