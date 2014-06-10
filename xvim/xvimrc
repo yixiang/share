@@ -1,5 +1,6 @@
 " Case incensitive search is the most common case.
 set ignorecase
+set hlsearch
 
 " ESC in insert mode
 imap ,,  <ESC>:w<CR>
