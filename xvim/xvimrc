@@ -27,6 +27,7 @@ map ,r  :run<CR>
 map ,mr  :run<CR>
 map ,ma  :xcmenucmd Analyze<CR>
 map ,mb  :xcmenucmd Build<CR>
+map ,mk  :xcmenucmd Clean<CR>
 map ,mm  :xcmenucmd Build<CR>
 map ,mp  :xcmenucmd Profile<CR>
 map ,mt  :xcmenucmd Test<CR>
