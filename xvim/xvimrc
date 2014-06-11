@@ -36,7 +36,7 @@ map ,mt  :xcmenucmd Test<CR>
 map ,c  :xccmd commentAndUncommentCurrentLines<CR>
 
 " Searching
-map ,ss  viw:xccmd findSelectedTextInWorkspace<CR>
+map ,s  viw:xccmd findSelectedTextInWorkspace<CR>
 
 " Navigating
 map ,f  :xccmd goForwardInHistoryByCommand<CR>
