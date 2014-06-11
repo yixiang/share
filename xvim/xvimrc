@@ -43,8 +43,8 @@ map ,f  :xccmd goForwardInHistoryByCommand<CR>
 map ,b  :xccmd goBackInHistoryByCommand<CR>
 map ,n  :xccmd jumpToNextCounterpart<CR>
 map ,N  :xccmd jumpToPreviousCounterpart<CR>
-map ,i  :xcmenucmd Jump to Next Issue<CR>
-map ,I  :xcmenucmd Jump to Previous Issue<CR>
+" map ,i  :xcmenucmd Jump to Next Issue<CR>
+" map ,I  :xcmenucmd Jump to Previous Issue<CR>
 
 " View current file in ...
 map ,vp  :xccmd revealInProjectNavigator<CR>
@@ -58,9 +58,7 @@ map ,h  :xhelp<CR>
 map ,k  :xccmd toggleBreakpointAtCurrentLine<CR>
 map ,K  :xccmd toggleBreakpoints<CR>
 map ,j  :xccmd stepOver<CR>
-map ,di  :xccmd stepInto<CR>
-map ,do  :xccmd stepOut<CR>
-map ,dl  :xccmd continueToCurrentLine<CR>
-map ,dc  :xccmd pauseOrContinue<CR>
-map ,dp  :xccmd pauseOrContinue<CR>
+map ,i  :xccmd stepInto<CR>
+map ,o  :xccmd stepOut<CR>
+map ,t  :xccmd pauseOrContinue<CR>
 
