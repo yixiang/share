@@ -12,9 +12,11 @@ endif
 set clipboard=unnamed
 
 " " Copy paste (word copy and word replacement)
-map ,a  ggyG
-map ,y  lbye
-map ,p  lbde"0P
+map ,a  :%y
+map ,y  viwy
+vmap ,y  iwy
+map ,p  viw"0P
+vmap ,p  iw"0P
 
 " if has('unix') " command line version of vim on mac doesn't expose 'mac'
 "     " On OSX

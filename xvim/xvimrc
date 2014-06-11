@@ -15,9 +15,11 @@ nmap ,q  :q<CR>
 set clipboard=unnamed
 
 " " Copy paste (word copy and word replacement)
-map ,a  ggyG
-map ,y  lbye
-map ,p  lbde"0P
+map ,a  :%y
+map ,y  viwy
+vmap ,y  iwy
+map ,p  viw"0P
+vmap ,p  iw"0P
 
 " Open file
 map gf  gd
@@ -37,6 +39,7 @@ map ,c  :xccmd commentAndUncommentCurrentLines<CR>
 
 " Searching
 map ,s  viw:xccmd findSelectedTextInWorkspace<CR>
+vmap ,s  :xccmd findSelectedTextInWorkspace<CR>
 
 " Navigating
 map ,f  :xccmd goForwardInHistoryByCommand<CR>
