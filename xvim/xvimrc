@@ -1,5 +1,6 @@
 " Case insensitive search is the most common case.
-set ignorecase
+" set ignorecase
+set vimregex
 set hlsearch
 
 " ESC in insert mode
@@ -14,12 +15,12 @@ nmap ,q  :q<CR>
 " Make clipboard and default register equivalent
 set clipboard=unnamed
 
-" " Copy paste (word copy and word replacement)
-map ,a  :%y
-map ,y  viwy
-vmap ,y  iwy
-map ,p  viw"0P
-vmap ,p  iw"0P
+" Copy paste (word copy and word replacement)
+map ,a  mzggyG`z
+map ,y  vmziwy`z
+vmap ,y  mziwy`z
+map ,p  vmziwd"0P`z
+vmap ,p  mziwd"0P`z
 
 " Open file
 map gf  gd

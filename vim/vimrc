@@ -11,12 +11,12 @@ endif
 " tie clipboard and the default register together
 set clipboard=unnamed
 
-" " Copy paste (word copy and word replacement)
-map ,a  :%y
-map ,y  viwy
-vmap ,y  iwy
-map ,p  viw"0P
-vmap ,p  iw"0P
+" Copy paste (word copy and word replacement)
+map ,a  :%y<CR>
+map ,y  vmziwy`z
+vmap ,y  mziwy`z
+map ,p  vmziwd"0P`z
+vmap ,p  mziwd"0P`z
 
 " if has('unix') " command line version of vim on mac doesn't expose 'mac'
 "     " On OSX
@@ -37,11 +37,8 @@ vmap ,p  iw"0P
 "    map ,P :call setreg("1",system("xclip -o -selection clipboard"))<CR>"1P
 " end
 
-" copy all
-map ,a :%y<CR>,y
 " paste from yank register
 map ,0 "0p
-map ,; "0p
 " paste delete register
 map ,1 "1p
 
