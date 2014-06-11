@@ -55,12 +55,12 @@ map ,vf  :xccmd showInFinder<CR>
 map ,h  :xhelp<CR>
 
 " Debugging
-map ,k  :xxcmd toggleBreakpointAtCurrentLine<CR>
-map ,K  :xxcmd toggleBreakpoints<CR>
-map ,j  :xxcmd stepOver<CR>
-map ,di  :xxcmd stepInto<CR>
-map ,do  :xxcmd stepOut<CR>
-map ,dl  :xxcmd continueToCurrentLine<CR>
-map ,dc  :xxcmd pauseOrContinue<CR>
-map ,dp  :xxcmd pauseOrContinue<CR>
+map ,k  :xccmd toggleBreakpointAtCurrentLine<CR>
+map ,K  :xccmd toggleBreakpoints<CR>
+map ,j  :xccmd stepOver<CR>
+map ,di  :xccmd stepInto<CR>
+map ,do  :xccmd stepOut<CR>
+map ,dl  :xccmd continueToCurrentLine<CR>
+map ,dc  :xccmd pauseOrContinue<CR>
+map ,dp  :xccmd pauseOrContinue<CR>
 
