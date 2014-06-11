@@ -1,4 +1,4 @@
-" Case incensitive search is the most common case.
+" Case insensitive search is the most common case.
 set ignorecase
 set hlsearch
 
@@ -22,7 +22,7 @@ map ,p  lbde"0P
 " Open file
 map gf  gd
 
-" Build and Run (using m to match vim's make comamnds)
+" Build and Run (using m to match vim's make commands)
 map ,r  :run<CR>
 map ,mr  :run<CR>
 map ,ma  :xcmenucmd Analyze<CR>
@@ -33,24 +33,34 @@ map ,mp  :xcmenucmd Profile<CR>
 map ,mt  :xcmenucmd Test<CR>
 
 " Commenting (not working)
-map ,c :xccmd commentAndUncommentCurrentLines<CR>
+map ,c  :xccmd commentAndUncommentCurrentLines<CR>
 
 " Searching
-map ,s viw:xccmd findSelectedTextInWorkspace<CR>
+map ,ss  viw:xccmd findSelectedTextInWorkspace<CR>
 
 " Navigating
-map ,f :xccmd goForwardInHistoryByCommand<CR>
-map ,b :xccmd goBackInHistoryByCommand<CR>
-map ,n :xccmd jumpToNextCounterpart<CR>
-map ,N :xccmd jumpToPreviousCounterpart<CR>
-map ,i :xcmenucmd Jump to Next Issue<CR>
-map ,I :xcmenucmd Jump to Previous Issue<CR>
+map ,f  :xccmd goForwardInHistoryByCommand<CR>
+map ,b  :xccmd goBackInHistoryByCommand<CR>
+map ,n  :xccmd jumpToNextCounterpart<CR>
+map ,N  :xccmd jumpToPreviousCounterpart<CR>
+map ,i  :xcmenucmd Jump to Next Issue<CR>
+map ,I  :xcmenucmd Jump to Previous Issue<CR>
 
 " View current file in ...
-map ,vp :xccmd revealInProjectNavigator<CR>
-map ,vs :xccmd revealInSymbolNavigator<CR>
-map ,vf :xccmd showInFinder<CR>
+map ,vp  :xccmd revealInProjectNavigator<CR>
+map ,vs  :xccmd revealInSymbolNavigator<CR>
+map ,vf  :xccmd showInFinder<CR>
 
 " Help (=== option click)
-map ,h :xhelp<CR>
+map ,h  :xhelp<CR>
+
+" Debugging
+map ,k  :xxcmd toggleBreakpointAtCurrentLine
+map ,K  :xxcmd toggleBreakpoints
+map ,j  :xxcmd stepOver
+map ,di  :xxcmd stepInto
+map ,do  :xxcmd stepOut
+map ,dl  :xxcmd continueToCurrentLine
+map ,dc  :xxcmd pauseOrContinue
+map ,dp  :xxcmd pauseOrContinue
 
