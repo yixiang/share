@@ -15,8 +15,8 @@ set clipboard=unnamed
 map ,a  :%y<CR>
 map ,y  vmziwy`z
 vmap ,y  mziwy`z
-map ,p  vmziwd"0P`z
-vmap ,p  mziwd"0P`z
+map ,p  vmziw"0p`z
+vmap ,p  mziw"0p`z
 
 " if has('unix') " command line version of vim on mac doesn't expose 'mac'
 "     " On OSX
@@ -63,17 +63,16 @@ set foldmethod=marker
 let g:xml_syntax_folding=1
 "set foldmethod=syntax "add this line to syntax\xml.vim
 
-set noexpandtab
 set shiftwidth=4
 set tabstop=4
 
 set hidden
 
 set incsearch
-set hlsearch 
+set hlsearch
 
 set novb
-set et
+set expandtab
 
 " ========= extension to filetype =========
 filetype on
