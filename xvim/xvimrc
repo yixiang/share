@@ -17,10 +17,8 @@ set clipboard=unnamed
 
 " Copy paste (word copy and word replacement)
 map ,a  mzggyG`z
-map ,y  vmziwy`z
-vmap ,y  mziwy`z
-map ,p  vmziwd"0P`z
-vmap ,p  mziwd"0P`z
+map ,y  mzlbye`z
+map ,p  mzlbde"0P`z
 
 " Open file
 map gf  gd
