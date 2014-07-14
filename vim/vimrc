@@ -57,6 +57,7 @@ set number
 set numberwidth=5 " 4 digits plus a space
 set encoding=utf-8
 set autoindent
+set autoread
 set autowrite
 syntax on
 set foldmethod=marker
