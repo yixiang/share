@@ -152,8 +152,9 @@ map ,gd  :up\|!gitd<CR>
 map ,gu  :up\|!gitu<CR>
 
 " save and quit
+map ,WQ :wq!<CR>
+map ,Q :q!<CR>
 map ,q :q<CR>
-"map ,!q :q!<CR>
 
 " map ,d in any mode other than normal
 map! ,, <ESC>:update<CR>
