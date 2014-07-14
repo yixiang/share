@@ -320,3 +320,7 @@ map ,< :s/^\(.*\)$/<!-- \1 -->/<CR>:noh<CR>
 map ,> :s/^<!-- \(.*\) -->$/\1/<CR>:noh<CR>
 " map ,( :s/^\(.*\)$/\(\* \1 \*\)/<CR>:noh<CR>
 " map ,) :s/^(\* \(.*\) \*)$/\1/<CR>:noh<CR>
+
+" Quick File https://github.com/zhchang/quick_file
+map ,<SPACE> :QF<SPACE>
+
