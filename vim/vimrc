@@ -59,6 +59,7 @@ set encoding=utf-8
 set autoindent
 set autoread
 set autowrite
+set showmatch
 syntax on
 set foldmethod=marker
 let g:xml_syntax_folding=1
