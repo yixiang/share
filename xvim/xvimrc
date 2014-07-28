@@ -12,6 +12,14 @@ nmap ,,  :w<CR>
 nmap ,w  :w<CR>
 nmap ,q  :q<CR>
 
+" insert line and exit inesrt mode
+map ,o o<ESC>
+map ,O o<ESC>
+map ,oo o<ESC>
+map ,OO O<ESC>
+map ,Op O<ESC>p
+map ,op o<ESC>p
+
 " Make clipboard and default register equivalent
 set clipboard=unnamed
 
