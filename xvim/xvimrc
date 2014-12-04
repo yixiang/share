@@ -26,7 +26,7 @@ set clipboard=unnamed
 " Copy paste (word copy and word replacement)
 map ,a  mzggyG`z
 map ,y  mzlbye`z
-map ,p  mzlbde"0P`z
+map ,p  mzlb"0Plde`z
 
 " Open file
 map gf  gd
