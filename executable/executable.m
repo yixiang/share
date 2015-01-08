@@ -1,4 +1,6 @@
 //usr/bin/env clang -framework Foundation -o/tmp/`basename "$0"` $0 && /tmp/`basename "$0"` $*;exit
+// To run this self compiling file, type the following command in terminal.
+// $ chmod +x <name_of_this_file>.m && ./<name_of_this_file>.m
 
 #import <Foundation/Foundation.h>
 
