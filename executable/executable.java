@@ -1,4 +1,4 @@
-//usr/bin/env javac -d /tmp $0;java -cp /tmp `basename "$0" .java` $*;exit
+//usr/bin/env javac -d /tmp $0 && java -cp /tmp `basename "$0" .java` $*;exit
 
 import static java.lang.System.out;
 

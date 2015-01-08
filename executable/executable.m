@@ -1,4 +1,4 @@
-//usr/bin/env clang -framework Foundation -o/tmp/`basename "$0"` $0;/tmp/`basename "$0"` $*;exit
+//usr/bin/env clang -framework Foundation -o/tmp/`basename "$0"` $0 && /tmp/`basename "$0"` $*;exit
 
 #import <Foundation/Foundation.h>
 

@@ -1,4 +1,4 @@
-//usr/bin/env cc -std=c99 -o/tmp/`basename "$0"` $0;/tmp/`basename "$0"` $*;exit
+//usr/bin/env cc -std=c99 -o/tmp/`basename "$0"` $0 && /tmp/`basename "$0"` $*;exit
 
 #include <stdio.h>
 
