@@ -165,11 +165,7 @@ nnoremap ,e <ESC>
 
 " insert line and exit inesrt mode
 map ,o o<ESC>
-map ,O o<ESC>
-map ,oo o<ESC>
-map ,OO O<ESC>
-map ,Op O<ESC>p
-map ,op o<ESC>p
+map ,O O<ESC>
 
 " spell check
 map ,sp :setlocal spell spelllang=en_us<CR>

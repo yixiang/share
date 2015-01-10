@@ -14,11 +14,7 @@ nmap ,q  :q<CR>
 
 " insert line and exit inesrt mode
 map ,o o<ESC>
-map ,O o<ESC>
-map ,oo o<ESC>
-map ,OO O<ESC>
-map ,Op O<ESC>p
-map ,op o<ESC>p
+map ,O O<ESC>
 
 " Make clipboard and default register equivalent
 set clipboard=unnamed
@@ -26,10 +22,7 @@ set clipboard=unnamed
 " Copy paste (word copy and word replacement)
 map ,a  mzggyG`z
 map ,y  mzlbye`z
-map ,p  mzlbde"0P`z
-
-" Open file
-map gf  gd
+map ,p  mzlb"0Plde`z
 
 " Build and Run (using m to match vim's make commands)
 map ,r  :run<CR>

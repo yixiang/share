@@ -1,4 +1,6 @@
-//usr/bin/env cc -std=c99 -o/tmp/`basename "$0"` $0;/tmp/`basename "$0"` $*;exit
+//usr/bin/env cc -std=c99 -o/tmp/`basename "$0"` $0 && /tmp/`basename "$0"` $*;exit
+// To run this self compiling file, type the following command in terminal.
+// $ chmod +x <name_of_this_file>.c && ./<name_of_this_file>.c
 
 #include <stdio.h>
 
