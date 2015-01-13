@@ -45,7 +45,7 @@ vmap ,s  :xccmd findSelectedTextInWorkspace<CR>
 map ,f  :xccmd goForwardInHistoryByCommand<CR>
 map ,b  :xccmd goBackInHistoryByCommand<CR>
 map ,n  :xccmd jumpToNextCounterpart<CR>
-map ,N  :xccmd jumpToPreviousCounterpart<CR>
+map ,m  :xccmd jumpToPreviousCounterpart<CR>
 " map ,i  :xcmenucmd Jump to Next Issue<CR>
 " map ,I  :xcmenucmd Jump to Previous Issue<CR>
 
