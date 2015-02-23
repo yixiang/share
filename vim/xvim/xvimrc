@@ -58,7 +58,7 @@ map ,vf  :xccmd showInFinder<CR>
 
 " Clang format
 " Select the current paragraph (which usually is a method) and format.
-map ,=   vip:xcmenucmd Format Selected Text<CR>
+map ,=   mzvip:xcmenucmd Format Selected Text<CR>`z
 vmap ,=  :xcmenucmd Format Selected Text<CR>
 
 " Help (=== option click)
