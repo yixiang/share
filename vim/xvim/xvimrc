@@ -13,8 +13,8 @@ nmap ,w  :w<CR>
 nmap ,q  :q<CR>
 
 " insert line and exit inesrt mode
-map ,o o<ESC>
-map ,O O<ESC>
+map ,o  o<ESC>
+map ,O  O<ESC>
 
 " Make clipboard and default register equivalent
 set clipboard=unnamed
@@ -34,36 +34,41 @@ map ,mm  :xcmenucmd Build<CR>
 map ,mp  :xcmenucmd Profile<CR>
 map ,mt  :xcmenucmd Test<CR>
 
-" Commenting (not working)
+" Commenting
+" Toggle the 
 map ,c  :xccmd commentAndUncommentCurrentLines<CR>
 " Generate a java doc style block comment.
 map ,#  O<ESC>0c$/**<CR> * <CR>* @param <CR>* @return <CR>*/<ESC>3kA
 
 " Searching
-map ,s  viw:xccmd findSelectedTextInWorkspace<CR>
+map ,s   mzviw:xccmd findSelectedTextInWorkspace<CR>`z
 vmap ,s  :xccmd findSelectedTextInWorkspace<CR>
 
 " Navigating
+map ,bb  :xccmd goBackInHistoryByCommand<CR>
 map ,bp  :xccmd goBackInHistoryByCommand<CR>
 map ,bn  :xccmd goForwardInHistoryByCommand<CR>
+" Use keys that matches direction commands that are used by Xcode.
 map ,bh  :xccmd goBackInHistoryByCommand<CR>
 map ,bl  :xccmd goForwardInHistoryByCommand<CR>
-map ,bb  :xccmd jumpToPreviousCounterpart<CR>
-map ,bc  :xccmd jumpToNextCounterpart<CR>
-map ,bi :xcmenucmd Jump to Previous Issue<CR>
-map ,bj  :xcmenucmd Jump to Next Issue<CR>
+map ,bk  :xccmd jumpToPreviousCounterpart<CR>
+map ,bj  :xccmd jumpToNextCounterpart<CR>
+" Issues
+map ,bu  :xcmenucmd Jump to Previous Issue<CR>
+map ,bi  :xcmenucmd Jump to Next Issue<CR>
 
 " View current file in ...
 map ,vp  :xccmd revealInProjectNavigator<CR>
 map ,vs  :xccmd revealInSymbolNavigator<CR>
 map ,vf  :xccmd showInFinder<CR>
 
-" Clang format
-" Select the current paragraph (which usually is a method) and format.
+" Clang format, requires https://github.com/XVimProject/XVim to be installed.
+" Format the current paragraph (which usually is a method).
 map ,=   mzvip:xcmenucmd Format Selected Text<CR>`z
+" Format the selected text.
 vmap ,=  :xcmenucmd Format Selected Text<CR>
 
-" Help (=== option click)
+" Help (equivalent to option+click on a symbole).
 map ,h  :xhelp<CR>
 
 " Debugging
@@ -71,6 +76,6 @@ map ,k  :xccmd toggleBreakpointAtCurrentLine<CR>
 map ,K  :xccmd toggleBreakpoints<CR>
 map ,j  :xccmd stepOver<CR>
 map ,i  :xccmd stepInto<CR>
-map ,o  :xccmd stepOut<CR>
+" map ,o  :xccmd stepOut<CR>
 map ,t  :xccmd pauseOrContinue<CR>
 
