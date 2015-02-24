@@ -46,16 +46,15 @@ vmap ,s  :xccmd findSelectedTextInWorkspace<CR>
 
 " Navigating
 map ,bb  :xccmd goBackInHistoryByCommand<CR>
-map ,bp  :xccmd goBackInHistoryByCommand<CR>
-map ,bn  :xccmd goForwardInHistoryByCommand<CR>
+map ,bf  :xccmd goForwardInHistoryByCommand<CR>
 " Use keys that matches direction commands that are used by Xcode.
 map ,bh  :xccmd goBackInHistoryByCommand<CR>
 map ,bl  :xccmd goForwardInHistoryByCommand<CR>
 map ,bk  :xccmd jumpToPreviousCounterpart<CR>
 map ,bj  :xccmd jumpToNextCounterpart<CR>
 " Issues
-map ,bu  :xcmenucmd Jump to Previous Issue<CR>
-map ,bi  :xcmenucmd Jump to Next Issue<CR>
+map ,bp  :xcmenucmd Jump to Previous Issue<CR>
+map ,bn  :xcmenucmd Jump to Next Issue<CR>
 
 " View current file in ...
 map ,vp  :xccmd revealInProjectNavigator<CR>
