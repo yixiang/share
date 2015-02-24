@@ -36,6 +36,8 @@ map ,mt  :xcmenucmd Test<CR>
 
 " Commenting (not working)
 map ,c  :xccmd commentAndUncommentCurrentLines<CR>
+" Generate a java doc style block comment.
+map ,#  O<ESC>0c$/**<CR> * <CR>* @param <CR>* @return <CR>*/<ESC>3kA
 
 " Searching
 map ,s  viw:xccmd findSelectedTextInWorkspace<CR>
