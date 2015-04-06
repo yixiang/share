@@ -156,6 +156,13 @@ map ,WQ :wq!<CR>
 map ,Q :q!<CR>
 map ,q :q<CR>
 
+" auto completion
+imap ,n <C-n>
+inoremap <expr> j pumvisible() ? "\<DOWN>" : "j"
+inoremap <expr> k pumvisible() ? "\<UP>" : "k"
+inoremap <expr> h pumvisible() ? "\<CR>" : "h"
+inoremap <expr> l pumvisible() ? "\<CR>" : "l"
+
 " map ,d in any mode other than normal
 map! ,, <ESC>:update<CR>
 map! ,e <ESC>
