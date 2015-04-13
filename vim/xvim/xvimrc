@@ -66,6 +66,8 @@ map ,vf  :xccmd showInFinder<CR>
 map ,=   mzvip:xcmenucmd Format Selected Text<CR>`z
 " Format the selected text.
 vmap ,=  :xcmenucmd Format Selected Text<CR>
+" Format current line.
+map ,-   mzV:xcmenucmd Format Selected Text<CR>`z
 
 " Help (equivalent to option+click on a symbole).
 map ,h  :xhelp<CR>
@@ -77,4 +79,7 @@ map ,j  :xccmd stepOver<CR>
 map ,i  :xccmd stepInto<CR>
 " map ,o  :xccmd stepOut<CR>
 map ,t  :xccmd pauseOrContinue<CR>
+
+" go to file
+map gf gd
 
