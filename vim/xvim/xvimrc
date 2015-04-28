@@ -82,8 +82,11 @@ map ,K  :xccmd toggleBreakpoints<CR>
 map ,j  :xccmd stepOver<CR>
 map ,i  :xccmd stepInto<CR>
 " map ,o  :xccmd stepOut<CR>
-map ,t  :xccmd pauseOrContinue<CR>
+" map ,t  :xccmd pauseOrContinue<CR>
 
 " go to file
 map gf gd
+
+" Edit in All Scope
+map ,t  :xccmd toggleTokenizedEditing<CR>
 
