@@ -13,6 +13,7 @@ alias m="make"
 # git related alias
 alias gita='git add'
 alias gitb='git branch'
+alias gitc='git commit -a -m'
 alias gitd='git diff'
 alias gitf='git fetch'
 alias gitm='git merge'
@@ -38,5 +39,5 @@ export SVN_EDITOR="vim"
 # export PS1="\u@\h: \W $ "
 export PS1="\h:\w $ "
 
-export PATH=$HOME/bin:$HOME/g/bin:$PATH
+export PATH=$HOME/bin:$HOME/bin/apache-maven-3.2.5/bin:$PATH
 
