@@ -61,6 +61,7 @@ map ,vp  :xccmd revealInProjectNavigator<CR>
 map ,vs  :xccmd revealInSymbolNavigator<CR>
 map ,vf  :xccmd showInFinder<CR>
 map ,vv  :xccmd !open -a MacVim %<CR>
+map ,v   :xccmd !open -a MacVim %<CR>
 
 " Clang format, requires https://github.com/XVimProject/XVim to be installed.
 " Format the current paragraph (which usually is a method).
