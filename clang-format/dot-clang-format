@@ -1,5 +1,5 @@
 BasedOnStyle: Google
-ColumnLimit: 98
+ColumnLimit: 99
 AllowShortIfStatementsOnASingleLine: false
 AllowShortBlocksOnASingleLine: false
 AllowShortFunctionsOnASingleLine: false
