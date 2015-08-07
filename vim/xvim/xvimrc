@@ -67,18 +67,14 @@ map ,vv  :!open -a MacVim %<CR>
 map ,vc  :!$HOME/bin/opencs %<CR>
 
 " Clang format, requires https://github.com/XVimProject/XVim to be installed.
-" Format the current paragraph (which usually is a method).
-map ,=   mzvip:xcmenucmd Format Selected Text<CR>`z
-" Format the selected text.
-vmap ,=  :xcmenucmd Format Selected Text<CR>
 " Format current line.
 map ,.   mzV:xcmenucmd Format Selected Text<CR>`z
+" Format the selected text.
+vmap ,.  :xcmenucmd Format Selected Text<CR>
 " Format file in focus
-map ,'   mzggvG{:xcmenucmd Format Selected Text<CR>`z
+map ,=   mzggvG{:xcmenucmd Format Selected Text<CR>`z
 " Format current block (enclosed in {...})
 map ,;   mzvi{:xcmenucmd Format Selected Text<CR>`z
-" Format the selected text.
-vmap ,;  :xcmenucmd Format Selected Text<CR>
 
 " Help (equivalent to option+click on a symbole).
 map ,h  :xhelp<CR>
