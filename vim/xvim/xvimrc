@@ -73,6 +73,8 @@ map ,=   mzvip:xcmenucmd Format Selected Text<CR>`z
 vmap ,=  :xcmenucmd Format Selected Text<CR>
 " Format current line.
 map ,.   mzV:xcmenucmd Format Selected Text<CR>`z
+" Format file in focus
+map ,'   mzggvG{:xcmenucmd Format Selected Text<CR>`z
 " Format current block (enclosed in {...})
 map ,;   mzvi{:xcmenucmd Format Selected Text<CR>`z
 " Format the selected text.
