@@ -3,6 +3,9 @@
 set vimregex
 set hlsearch
 
+" Make clipboard and default register equivalent
+set clipboard=unnamed
+
 " ESC in insert mode
 imap ,,  <ESC>:w<CR>
 imap ,e  <ESC>
@@ -14,18 +17,20 @@ nmap ,q  :q<CR>
 
 " insert line and exit inesrt mode
 map ,o  o<ESC>
+imap ,o  <ESC>o<ESC>
 map ,O  O<ESC>
-
-" Make clipboard and default register equivalent
-set clipboard=unnamed
+imap ,O  <ESC>O<ESC>
 
 " Copy paste (word copy and word replacement)
 map ,a  mzggyG`z
 map ,y  mzlbye`z
-map ,p  mzlb"0Plde`z
+imap ,y  <ESC>mzlbye`z
+imap ,p  <ESC>mzlb"0Plde`z
 
 " Build and Run (using m to match vim's make commands)
 map ,r  :run<CR>
+imap ,r  <ESC>:run<CR>
+
 " Commented to give the ,m short to Jump to Next Counterpart.
 " map ,mr  :run<CR>
 " map ,ma  :xcmenucmd Analyze<CR>
@@ -38,16 +43,20 @@ map ,r  :run<CR>
 " Commenting
 " Toggle the 
 map ,c  :xccmd commentAndUncommentCurrentLines<CR>
+imap ,c  <ESC>:xccmd commentAndUncommentCurrentLines<CR>
 " Generate a java doc style block comment.
 map ,#  O<ESC>0c$/**<CR> * <CR>* @param <CR>* @return <CR>*/<ESC>3kA
 
 " Searching
 map ,s   mzviw:xccmd findSelectedTextInWorkspace<CR>`z
 vmap ,s  :xccmd findSelectedTextInWorkspace<CR>
+imap ,s  <ESC>:xccmd findSelectedTextInWorkspace<CR>
 
 " Navigating
 map ,bb  :xccmd goBackInHistoryByCommand<CR>
+imap ,bb  <ESC>:xccmd goBackInHistoryByCommand<CR>
 map ,bf  :xccmd goForwardInHistoryByCommand<CR>
+imap ,bf  <ESC>:xccmd goForwardInHistoryByCommand<CR>
 " Use keys that matches direction commands that are used by Xcode.
 map ,bh  :xccmd goBackInHistoryByCommand<CR>
 map ,bl  :xccmd goForwardInHistoryByCommand<CR>
@@ -55,9 +64,12 @@ map ,bk  :xccmd jumpToPreviousCounterpart<CR>
 map ,bj  :xccmd jumpToNextCounterpart<CR>
 " Frequently used command, more convinient shortcut.
 map ,m  :xccmd jumpToNextCounterpart<CR>
+imap ,m  <ESC>:xccmd jumpToNextCounterpart<CR>
 " Issues
 map ,bp  :xcmenucmd Jump to Previous Issue<CR>
+imap ,bp  <ESC>:xcmenucmd Jump to Previous Issue<CR>
 map ,bn  :xcmenucmd Jump to Next Issue<CR>
+imap ,bn  <ESC>:xcmenucmd Jump to Next Issue<CR>
 
 " View current file in ...
 map ,vp  :xccmd revealInProjectNavigator<CR>
@@ -69,21 +81,25 @@ map ,vc  :!$HOME/bin/opencs %<CR>
 " Clang format, requires https://github.com/XVimProject/XVim to be installed.
 " Format current line.
 map ,.   mzV:xcmenucmd Format Selected Text<CR>`z
+imap ,.   <ESC>mzV:xcmenucmd Format Selected Text<CR>`z
 " Format the selected text.
 vmap ,.  :xcmenucmd Format Selected Text<CR>
 " Format file in focus
 map ,=   mzggvG{:xcmenucmd Format Selected Text<CR>`z
+imap ,=   <ESC>mzggvG{:xcmenucmd Format Selected Text<CR>`z
 " Format current block (enclosed in {...})
 map ,;   mzvi{:xcmenucmd Format Selected Text<CR>`z
+imap ,;   <ESC>mzvi{:xcmenucmd Format Selected Text<CR>`z
 
 " Help (equivalent to option+click on a symbole).
 map ,h  :xhelp<CR>
+imap ,h  <ESC>:xhelp<CR>
 
 " Debugging
-map ,k  :xccmd toggleBreakpointAtCurrentLine<CR>
-map ,K  :xccmd toggleBreakpoints<CR>
-map ,j  :xccmd stepOver<CR>
-map ,i  :xccmd stepInto<CR>
+" map ,k  :xccmd toggleBreakpointAtCurrentLine<CR>
+" map ,K  :xccmd toggleBreakpoints<CR>
+" map ,j  :xccmd stepOver<CR>
+" map ,i  :xccmd stepInto<CR>
 " map ,o  :xccmd stepOut<CR>
 " map ,t  :xccmd pauseOrContinue<CR>
 
@@ -92,4 +108,5 @@ map gf gd
 
 " Edit in All Scope
 map ,t  :xccmd toggleTokenizedEditing<CR>
+
 
