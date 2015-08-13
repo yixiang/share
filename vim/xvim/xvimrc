@@ -24,6 +24,7 @@ imap ,O  <ESC>O<ESC>
 " Copy paste (word copy and word replacement)
 map ,a  mzggyG`z
 map ,y  mzlbye`z
+map ,p  mzlb"0Plde`z
 imap ,y  <ESC>mzlbye`z
 imap ,p  <ESC>mzlb"0Plde`z
 
