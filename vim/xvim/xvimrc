@@ -54,23 +54,20 @@ vmap ,s  :xccmd findSelectedTextInWorkspace<CR>
 imap ,s  <ESC>:xccmd findSelectedTextInWorkspace<CR>
 
 " Navigating
-map ,bb  :xccmd goBackInHistoryByCommand<CR>
-imap ,bb  <ESC>:xccmd goBackInHistoryByCommand<CR>
-map ,bf  :xccmd goForwardInHistoryByCommand<CR>
-imap ,bf  <ESC>:xccmd goForwardInHistoryByCommand<CR>
+map ,b  :xccmd goBackInHistoryByCommand<CR>
+imap ,b  <ESC>:xccmd goBackInHistoryByCommand<CR>
+map ,f  :xccmd goForwardInHistoryByCommand<CR>
+imap ,f  <ESC>:xccmd goForwardInHistoryByCommand<CR>
 " Use keys that matches direction commands that are used by Xcode.
-map ,bh  :xccmd goBackInHistoryByCommand<CR>
-map ,bl  :xccmd goForwardInHistoryByCommand<CR>
-map ,bk  :xccmd jumpToPreviousCounterpart<CR>
-map ,bj  :xccmd jumpToNextCounterpart<CR>
-" Frequently used command, more convinient shortcut.
 map ,m  :xccmd jumpToNextCounterpart<CR>
 imap ,m  <ESC>:xccmd jumpToNextCounterpart<CR>
+map ,M  :xccmd jumpToPreviousCounterpart<CR>
+imap ,M  <ESC>:xccmd jumpToPreviousCounterpart<CR>
 " Issues
-map ,bp  :xcmenucmd Jump to Previous Issue<CR>
-imap ,bp  <ESC>:xcmenucmd Jump to Previous Issue<CR>
-map ,bn  :xcmenucmd Jump to Next Issue<CR>
-imap ,bn  <ESC>:xcmenucmd Jump to Next Issue<CR>
+map ,n  :xcmenucmd Jump to Next Issue<CR>
+imap ,n  <ESC>:xcmenucmd Jump to Next Issue<CR>
+map ,N  :xcmenucmd Jump to Previous Issue<CR>
+imap ,N  <ESC>:xcmenucmd Jump to Previous Issue<CR>
 
 " View current file in ...
 map ,vp  :xccmd revealInProjectNavigator<CR>
