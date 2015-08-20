@@ -56,8 +56,8 @@ imap ,s  <ESC>:xccmd findSelectedTextInWorkspace<CR>
 " Navigating
 map ,b  :xccmd goBackInHistoryByCommand<CR>
 imap ,b  <ESC>:xccmd goBackInHistoryByCommand<CR>
-map ,f  :xccmd goForwardInHistoryByCommand<CR>
-imap ,f  <ESC>:xccmd goForwardInHistoryByCommand<CR>
+map ,B  :xccmd goForwardInHistoryByCommand<CR>
+imap ,B  <ESC>:xccmd goForwardInHistoryByCommand<CR>
 " Use keys that matches direction commands that are used by Xcode.
 map ,m  :xccmd jumpToNextCounterpart<CR>
 imap ,m  <ESC>:xccmd jumpToNextCounterpart<CR>
