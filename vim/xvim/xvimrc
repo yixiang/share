@@ -107,4 +107,3 @@ map gf gd
 " Edit in All Scope
 map ,t  :xccmd toggleTokenizedEditing<CR>
 
-

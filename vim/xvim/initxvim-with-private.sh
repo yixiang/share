@@ -1,1 +1,3 @@
-cat private-xvimrc xvimrc > ~/.xvimrc
+cat xvimrc > ~/.xvimrc
+echo "# ====== Private ======" >> ~/.xvimrc
+cat private-xvimrc >> ~/.xvimrc
