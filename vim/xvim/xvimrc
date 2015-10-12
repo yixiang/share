@@ -52,6 +52,8 @@ map ,#  O<ESC>0c$/**<CR> * <CR>* @param <CR>* @return <CR>*/<ESC>3kA
 map ,s   mzviw:xccmd findSelectedTextInWorkspace<CR>`z
 vmap ,s  :xccmd findSelectedTextInWorkspace<CR>
 imap ,s  <ESC>:xccmd findSelectedTextInWorkspace<CR>
+map ,S   :xccmd findSelectedSymbolInWorkspace<CR>
+imap ,S  <ESC>:xccmd findSelectedSymbolInWorkspace<CR>
 
 " Navigating
 map ,b  :xccmd goBackInHistoryByCommand<CR>
