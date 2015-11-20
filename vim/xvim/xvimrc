@@ -23,10 +23,13 @@ imap ,O  <ESC>O<ESC>
 
 " Copy paste (word copy and word replacement)
 map ,a  mzggyG`z
-map ,y  mzlbye`z
-map ,p  mzlb"0Plde`z
-imap ,y  <ESC>mzlbye`z
-imap ,p  <ESC>mzlb"0Plde`z
+map ,y  vmziwy`z
+map ,p  vmziw"0p`z
+imap ,y  <ESC>vmziwy`z
+imap ,p  <ESC>vmziw"0p`z
+vmap ,p  "0p
+map ,0 "0p
+imap ,0 <ESC>"0p
 
 " Build and Run (using m to match vim's make commands)
 map ,r  :run<CR>

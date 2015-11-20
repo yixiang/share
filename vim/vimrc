@@ -14,9 +14,9 @@ set clipboard=unnamed
 " Copy paste (word copy and word replacement)
 map ,a  :%y<CR>
 map ,y  vmziwy`z
-vmap ,y  mziwy`z
 map ,p  vmziw"0p`z
-vmap ,p  mziw"0p`z
+vmap ,p  "0p
+map ,0  "0p
 
 " if has('unix') " command line version of vim on mac doesn't expose 'mac'
 "     " On OSX
