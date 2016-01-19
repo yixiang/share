@@ -335,3 +335,13 @@ map ,> :s/^<!-- \(.*\) -->$/\1/<CR>:noh<CR>
 " Quick File https://github.com/zhchang/quick_file
 map ,<SPACE> :QF<SPACE>
 
+function! SwitchSourceOrHeader()
+  "update!
+  if (expand ("%:e") == "cc")
+    find %:t:r.h
+  else
+    find %:t:r.cc
+  endif
+endfunction
+
+nmap ,n :call SwitchSourceOrHeader()<CR>

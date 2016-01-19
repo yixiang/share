@@ -44,13 +44,13 @@ map ,r  :run<CR>
 imap ,r  <ESC>:run<CR>
 
 " Commented to give the ,m short to Jump to Next Counterpart.
-" map ,mr  :run<CR>
-" map ,ma  :xcmenucmd Analyze<CR>
-" map ,mb  :xcmenucmd Build<CR>
-" map ,mk  :xcmenucmd Clean<CR>
-" map ,mm  :xcmenucmd Build<CR>
-" map ,mp  :xcmenucmd Profile<CR>
-" map ,mt  :xcmenucmd Test<CR>
+map ,mr  :run<CR>
+map ,ma  :xcmenucmd Analyze<CR>
+map ,mb  :xcmenucmd Build<CR>
+map ,mk  :xcmenucmd Clean<CR>
+map ,mm  :xcmenucmd Build<CR>
+map ,mp  :xcmenucmd Profile<CR>
+map ,mt  :xcmenucmd Test<CR>
 
 " Commenting
 " Toggle the 
@@ -72,15 +72,15 @@ imap ,b  <ESC>:xccmd goBackInHistoryByCommand<CR>
 map ,B  :xccmd goForwardInHistoryByCommand<CR>
 imap ,B  <ESC>:xccmd goForwardInHistoryByCommand<CR>
 " Use keys that matches direction commands that are used by Xcode.
-map ,m  :xccmd jumpToNextCounterpart<CR>
-imap ,m  <ESC>:xccmd jumpToNextCounterpart<CR>
-map ,M  :xccmd jumpToPreviousCounterpart<CR>
-imap ,M  <ESC>:xccmd jumpToPreviousCounterpart<CR>
+map ,n  :xccmd jumpToNextCounterpart<CR>
+imap ,n  <ESC>:xccmd jumpToNextCounterpart<CR>
+map ,N  :xccmd jumpToPreviousCounterpart<CR>
+imap ,N  <ESC>:xccmd jumpToPreviousCounterpart<CR>
 " Issues
-map ,n  :xcmenucmd Jump to Next Issue<CR>
-imap ,n  <ESC>:xcmenucmd Jump to Next Issue<CR>
-map ,N  :xcmenucmd Jump to Previous Issue<CR>
-imap ,N  <ESC>:xcmenucmd Jump to Previous Issue<CR>
+map ,j  :xcmenucmd Jump to Next Issue<CR>
+imap ,j  <ESC>:xcmenucmd Jump to Next Issue<CR>
+map ,J  :xcmenucmd Jump to Previous Issue<CR>
+imap ,J  <ESC>:xcmenucmd Jump to Previous Issue<CR>
 
 " View current file in ...
 map ,vp  :xccmd revealInProjectNavigator<CR>
