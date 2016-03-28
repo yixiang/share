@@ -122,5 +122,4 @@ map ,t  :xccmd toggleTokenizedEditing<CR>
 
 " Open quickly
 map  ,<SPACE>  <ESC>:xcmenucmd Open Quickly...<CR>
-imap  ,<SPACE>  <ESC>:xcmenucmd Open Quickly...<CR>
 
