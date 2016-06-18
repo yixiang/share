@@ -325,10 +325,10 @@ au FileType bat CommentStyle REM
 " au FileType python CommentStyle """ @ """
 
 " wrapping comments
-map ,/ :s/^\(.*\)$/\/\* \1 \*\//<CR>:noh<CR>
-map ,\ :s/^\/\* \(.*\) \*\/$/\1/<CR>:noh<CR>
-map ,< :s/^\(.*\)$/<!-- \1 -->/<CR>:noh<CR>
-map ,> :s/^<!-- \(.*\) -->$/\1/<CR>:noh<CR>
+" map ,/ :s/^\(.*\)$/\/\* \1 \*\//<CR>:noh<CR>
+" map ,\ :s/^\/\* \(.*\) \*\/$/\1/<CR>:noh<CR>
+" map ,< :s/^\(.*\)$/<!-- \1 -->/<CR>:noh<CR>
+" map ,> :s/^<!-- \(.*\) -->$/\1/<CR>:noh<CR>
 " map ,( :s/^\(.*\)$/\(\* \1 \*\)/<CR>:noh<CR>
 " map ,) :s/^(\* \(.*\) \*)$/\1/<CR>:noh<CR>
 
@@ -347,3 +347,7 @@ function! SwitchSourceOrHeader()
 endfunction
 
 nmap ,n :call SwitchSourceOrHeader()<CR>
+
+" Search currently selected text.
+vnoremap // y/<C-R>"<CR>
+
