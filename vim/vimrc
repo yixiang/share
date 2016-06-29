@@ -311,7 +311,7 @@ map <silent> ,v :call UnComment()<CR>
 
 CommentStyle #
 au FileType * CommentStyle #
-au FileType c,cpp,cs,java,objc,go,d,moscript,javascript,xkb CommentStyle //
+au FileType c,cpp,cs,java,objc,objcpp,go,d,moscript,javascript,xkb CommentStyle //
 au FileType html,xml CommentStyle <!-- @ -->
 au FileType strings,css,sql CommentStyle /* @ */
 au FileType vim CommentStyle "
