@@ -349,5 +349,5 @@ endfunction
 nmap ,n :call SwitchSourceOrHeader()<CR>
 
 " Search currently selected text.
-vnoremap // y/<C-R>"<CR>
+vnoremap ,/ y/<C-R>"<CR>
 
