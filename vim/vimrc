@@ -83,12 +83,11 @@ au BufNewFile,BufRead *.m set syntax=objc
 
 " =========== customizing syntax ==========
 au Syntax html   set sw=2 | set ts=2 | set noet
-au Syntax python set sw=4 | set ts=4 | set et
-au Syntax go     set sw=8 | set ts=8 | set noet
-au Syntax objc   set sw=4 | set ts=4 | set et
-au Syntax c   set sw=4 | set ts=4 | set et
-au Syntax cpp   set sw=4 | set ts=4 | set et
-au Syntax java   set sw=4 | set ts=4 | set et
+au Syntax python set sw=2 | set ts=4 | set et
+au Syntax objc   set sw=2 | set ts=4 | set et
+au Syntax c   set sw=2 | set ts=4 | set et
+au Syntax cpp   set sw=2 | set ts=4 | set et
+au Syntax java   set sw=2 | set ts=4 | set et
 au Syntax markdown set sw=2 | set ts=4 | set et
 
 " =========== customizing file extension handling ==========
