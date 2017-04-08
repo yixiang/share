@@ -69,6 +69,7 @@ imap ,S  <ESC>:xccmd findSelectedSymbolInWorkspace<CR>
 " Navigating
 map ,b  :xccmd goBackInHistoryByCommand<CR>
 map ,B  :xccmd goForwardInHistoryByCommand<CR>
+map ,m  :xccmd goForwardInHistoryByCommand<CR>
 " Use keys that matches direction commands that are used by Xcode.
 map ,n  :xccmd jumpToNextCounterpart<CR>
 map ,N  :xccmd jumpToPreviousCounterpart<CR>
