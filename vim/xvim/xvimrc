@@ -67,12 +67,12 @@ map ,S   :xccmd findSelectedSymbolInWorkspace<CR>
 imap ,S  <ESC>:xccmd findSelectedSymbolInWorkspace<CR>
 
 " Navigating
-map ,b  :xccmd goBackInHistoryByCommand<CR>
-map ,B  :xccmd goForwardInHistoryByCommand<CR>
-map ,m  :xccmd goForwardInHistoryByCommand<CR>
+map ,b  :pjump<CR>
+map ,B  :njump<CR>
+map ,n  :njump<CR>
 " Use keys that matches direction commands that are used by Xcode.
-map ,n  :xccmd jumpToNextCounterpart<CR>
-map ,N  :xccmd jumpToPreviousCounterpart<CR>
+map ,m  :ncounterpart<CR>
+map ,M  :pcounterpart<CR>
 " Issues
 " map ,i  :xcmenucmd Jump to Next Issue<CR>
 " map ,I  :xcmenucmd Jump to Previous Issue<CR>

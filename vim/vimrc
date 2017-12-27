@@ -334,7 +334,7 @@ au FileType bat CommentStyle REM
 " Quick File https://github.com/zhchang/quick_file
 map ,<SPACE> :QF<SPACE>
 
-execute pathogen#infect()
+" execute pathogen#infect()
 
 function! SwitchSourceOrHeader()
   "update!
