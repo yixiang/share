@@ -40,17 +40,21 @@ map ,0 "0p
 imap ,0 <ESC>"0p
 
 " Build and Run (using m to match vim's make commands)
-map ,r  :run<CR>
-imap ,r  <ESC>:run<CR>
+map ,rr  :run<CR>
+imap ,rr  <ESC>:run<CR>
+map ,rt  :xcmenucmd Test<CR>
+imap ,rt  :xcmenucmd Test<CR>
+map ,rb  :xcmenucmd Build<CR>
+imap ,rb  :xcmenucmd Build<CR>
 
 " Commented to give the ,m short to Jump to Next Counterpart.
-map ,mr  :run<CR>
-map ,ma  :xcmenucmd Analyze<CR>
-map ,mb  :xcmenucmd Build<CR>
-map ,mk  :xcmenucmd Clean<CR>
-map ,mm  :xcmenucmd Build<CR>
-map ,mp  :xcmenucmd Profile<CR>
-map ,mt  :xcmenucmd Test<CR>
+" map ,mr  :run<CR>
+" map ,ma  :xcmenucmd Analyze<CR>
+" map ,mb  :xcmenucmd Build<CR>
+" map ,mk  :xcmenucmd Clean<CR>
+" map ,mm  :xcmenucmd Build<CR>
+" map ,mp  :xcmenucmd Profile<CR>
+" map ,mt  :xcmenucmd Test<CR>
 
 " Commenting
 " Toggle the 
