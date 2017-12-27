@@ -90,16 +90,16 @@ map ,vc  :!$HOME/bin/opencs %<CR>
 
 " Clang format, requires https://github.com/XVimProject/XVim to be installed.
 " Format current line.
-map ,.   mzV:xcmenucmd Format Selected Text<CR>`z
-imap ,.   <ESC>mzV:xcmenucmd Format Selected Text<CR>`z
+map ,.   mzV:xcmenucmd Format Source Code<CR>`z
+imap ,.   <ESC>mzV:xcmenucmd Format Source Code<CR>`z
 " Format the selected text.
-vmap ,.  :xcmenucmd Format Selected Text<CR>
+vmap ,.  :xcmenucmd Format Source Code<CR>
 " Format file in focus
-map ,=   mzggvG{:xcmenucmd Format Selected Text<CR>`z
-imap ,=   <ESC>mzggvG{:xcmenucmd Format Selected Text<CR>`z
+map ,=   mzggvG{:xcmenucmd Format Source Code<CR>`z
+imap ,=   <ESC>mzggvG{:xcmenucmd Format Source Code<CR>`z
 " Format current block (enclosed in {...})
-map ,;   mzvi{:xcmenucmd Format Selected Text<CR>`z
-imap ,;   <ESC>mzvi{:xcmenucmd Format Selected Text<CR>`z
+map ,;   mzvi{:xcmenucmd Format Source Code<CR>`z
+imap ,;   <ESC>mzvi{:xcmenucmd Format Source Code<CR>`z
 
 " Help (equivalent to option+click on a symbole).
 map ,h  :xhelp<CR>
