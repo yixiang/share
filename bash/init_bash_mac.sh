@@ -1,4 +1,4 @@
 [ -f ~/.bashrc ] && rm ~/.bashrc
-ln bashrc ~/.bashrc
+cp bashrc ~/.bashrc
 source ~/.bashrc
 echo "source ~/.bashrc" >> ~/.profile
