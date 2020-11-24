@@ -89,6 +89,7 @@ au Syntax c   set sw=2 | set ts=4 | set et
 au Syntax cpp   set sw=2 | set ts=4 | set et
 au Syntax java   set sw=2 | set ts=4 | set et
 au Syntax markdown set sw=2 | set ts=4 | set et
+au Syntax make set sw=4 | set ts=4 | set noet
 
 " =========== customizing file extension handling ==========
 au BufNewFile,BufRead *.molib setf moscript
