@@ -152,10 +152,10 @@ map ,gd  :up\|!gitd<CR>
 map ,gu  :up\|!gitu<CR>
 
 " save and quit
-map ,WQ :wq!<CR>
-map! ,Q <ESC>:wq<CR>
-nnoremap ,Q :wq<CR>
-map ,q :q<CR>
+map! ,q <ESC>:wq<CR>
+nnoremap ,q :wq<CR>
+map! ,Q <ESC>:q<CR>
+map ,Q :q<CR>
 
 " auto completion
 imap ,n <C-n>
